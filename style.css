@@ -10,26 +10,28 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
     text-align: center;
 }
 
 .header {
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .header h1 {
-    margin: 10px 0;
-    font-size: 28px;
+    margin: 0;
+    font-size: 32px;
     color: #333;
 }
 
 .header p {
-    color: #777;
+    color: #555;
 }
 
 .profile-img {
@@ -38,43 +40,53 @@ body {
     border-radius: 50%;
     margin-bottom: 10px;
     border: 3px solid #333;
+    object-fit: cover;
 }
 
-.section {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.section h2 {
-    font-size: 24px;
+h2 {
     color: #333;
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    text-align: left;
 }
 
-.section p,
-.section ul {
+h3 {
+    color: #555;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+    text-align: left;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+strong {
+    color: #333;
+}
+
+p {
     color: #555;
     line-height: 1.6;
 }
 
-.section ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
+a {
     text-decoration: none;
-    transition: background-color 0.3s;
+    color: #333;
 }
 
-.button:hover {
-    background-color: #555;
+a:hover {
+    color: #555;
 }
