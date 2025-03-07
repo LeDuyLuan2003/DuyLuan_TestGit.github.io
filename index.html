@@ -5,94 +5,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - Lê Duy Luân</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS for scroll animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <img src="img\luan.png" alt="Profile Picture" class="profile-img">
-            <h1>Lê Duy Luân</h1>
-            <p>Software Engineering Student | HUTECH</p>
+            <div class="profile-wrapper">
+                <img src="img/luan.png" alt="Profile Picture" class="profile-img">
+                <div class="header-content">
+                    <h1>Lê Duy Luân</h1>
+                    <p>Software Engineering Student | HUTECH</p>
+                    <div class="contact-icons">
+                        <a href="mailto:luanml0016@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:0394008828"><i class="fas fa-phone"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <section class="personal-info">
-            <h2>Personal Information</h2>
-            <ul>
-                <li><strong>Full Name:</strong> Lê Duy Luân</li>
-                <li><strong>Gender:</strong> Male</li>
-                <li><strong>Date of Birth:</strong> April 18, 2003</li>
-                <li><strong>Address:</strong> District 9, Ho Chi Minh City</li>
-                <li><strong>Phone Number:</strong> 0394008828</li>
-                <li><strong>Email:</strong> luanml0016@gmai.com</li>
-            </ul>
-        </section>
+        <div class="main-content">
+            <section class="section" data-aos="fade-up">
+                <div class="section-header">
+                    <i class="fas fa-user section-icon"></i>
+                    <h2>Personal Information</h2>
+                </div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong><i class="fas fa-user-tag"></i> Full Name:</strong> Lê Duy Luân
+                    </div>
+                    <div class="info-item">
+                        <strong><i class="fas fa-venus-mars"></i> Gender:</strong> Male
+                    </div>
+                    <div class="info-item">
+                        <strong><i class="fas fa-birthday-cake"></i> Date of Birth:</strong> April 18, 2003
+                    </div>
+                    <div class="info-item">
+                        <strong><i class="fas fa-map-marker-alt"></i> Address:</strong> District 9, Ho Chi Minh City
+                    </div>
+                    <div class="info-item">
+                        <strong><i class="fas fa-phone"></i> Phone:</strong> 0394008828
+                    </div>
+                    <div class="info-item">
+                        <strong><i class="fas fa-envelope"></i> Email:</strong> luanml0016@gmail.com
+                    </div>
+                </div>
+            </section>
 
-        <section class="education">
-            <h2>Education</h2>
-            <p>Ho Chi Minh City University of Technology (HUTECH)</p>
-            <p><strong>Major:</strong> Software Engineering</p>
-            <p><strong>Expected Graduation:</strong> June 2025</p>
-            <p><strong>Current GPA:</strong> 3.5/4.0</p>
-        </section>
+            <section class="section" data-aos="fade-up" data-aos-delay="100">
+                <div class="section-header">
+                    <i class="fas fa-graduation-cap section-icon"></i>
+                    <h2>Education</h2>
+                </div>
+                <div class="project">
+                    <div class="project-header">
+                        <div class="project-title">Ho Chi Minh City University of Technology (HUTECH)</div>
+                        <div class="project-meta">
+                            <span><i class="fas fa-code-branch"></i> Software Engineering</span>
+                            <span><i class="fas fa-calendar-alt"></i> Expected Graduation: June 2025</span>
+                            <span><i class="fas fa-star"></i> Current GPA: 3.5/4.0</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section class="achievements">
-            <h2>Achievements</h2>
-            <ul>
-                <li>"Five-Good Student" Award at Faculty Level</li>
-                <li>Recognized as an Outstanding Student in 3 Semesters</li>
-                <li>Encouragement Award in "I Like BA" System Analysis and Design Competition</li>
-                <li>Preliminary Round in "Hutech Code War" Competition</li>
-                <li>Completed courses in soft skills (Communication, Teamwork, Time Management)</li>
-            </ul>
-        </section>
-
-        <section class="technical-skills">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong> Java, C#, JavaScript</li>
-                <li><strong>Frameworks/Platforms:</strong> Spring MVC, Spring Boot, Spring Security, Flask, Hibernate, JPA</li>
-                <li><strong>Web Technologies:</strong> HTML, CSS, Bootstrap</li>
-                <li><strong>Database:</strong> MS SQL Server, MySQL</li>
-                <li><strong>Development Tools:</strong> VS Code, NetBeans, Eclipse, IntelliJ IDEA, Laragon, Postman</li>
-                <li><strong>Version Control:</strong> GitHub, GitLab</li>
-                <li><strong>Management Tools:</strong> Trello, Jira</li>
-                <li><strong>Foreign Languages:</strong> English (B1)</li>
-            </ul>
-        </section>
-
-        <section class="projects">
-            <h2>Project Experience In School</h2>
-
-            <h3>1. AI Video Presentation Web Application (March 2024 - June 2024) — 3 members</h3>
-            <ul>
-                <li><strong>Description:</strong> Led the development of a web application that generates AI-driven video presentations from text inputs.</li>
-                <li><strong>Technologies:</strong> Python, Flask, GPT-3.5, DALL-E 2</li>
-                <li><strong>Role:</strong> Team Leader, System Analyst, Full Stack Developer</li>
-                <li><strong>Responsibilities:</strong></li>
-                <ul>
-                    <li>Led the development of a web application using Python and Flask.</li>
-                    <li>Integrated machine learning models to automate video creation based on text inputs.</li>
-                    <li>Created project timelines and managed the team's progress.</li>
-                    <li>Analyzed system requirements and created use case diagrams.</li>
+            <section class="section" data-aos="fade-up" data-aos-delay="200">
+                <div class="section-header">
+                    <i class="fas fa-trophy section-icon"></i>
+                    <h2>Achievements</h2>
+                </div>
+                <ul class="achievements-list">
+                    <li data-aos="fade-right" data-aos-delay="100">
+                        <strong><i class="fas fa-award"></i> "Five-Good Student" Award at Faculty Level</strong>
+                    </li>
+                    <li data-aos="fade-right" data-aos-delay="200">
+                        <strong><i class="fas fa-medal"></i> Recognized as an Outstanding Student in 3 Semesters</strong>
+                    </li>
+                    <li data-aos="fade-right" data-aos-delay="300">
+                        <strong><i class="fas fa-trophy"></i> Encouragement Award in "I Like BA" System Analysis and Design Competition</strong>
+                    </li>
+                    <li data-aos="fade-right" data-aos-delay="400">
+                        <strong><i class="fas fa-code"></i> Preliminary Round in "Hutech Code War" Competition</strong>
+                    </li>
+                    <li data-aos="fade-right" data-aos-delay="500">
+                        <strong><i class="fas fa-certificate"></i> Completed courses in soft skills (Communication, Teamwork, Time Management)</strong>
+                    </li>
                 </ul>
-            </ul>
+            </section>
 
-            <h3>2. Convenience Store Website (May 2024 - July 2024) — 4 members</h3>
-            <ul>
-                <li><strong>Description:</strong> Created a website for a convenience store to manage products, inventory, and customer orders.</li>
-                <li><strong>Technologies:</strong> Spring Boot, HTML, CSS, Bootstrap, MySQL</li>
-                <li><strong>Role:</strong> Team Leader, Backend Developer, Frontend Developer</li>
-                <li><strong>Responsibilities:</strong></li>
-                <ul>
-                    <li>Developed RESTful APIs for product management, inventory tracking, and customer orders.</li>
-                    <li>Implemented frontend features using HTML, CSS, and Bootstrap.</li>
-                    <li>Designed and implemented the database using MySQL.</li>
-                    <li>Managed team progress and timelines.</li>
-                </ul>
-            </ul>
-        </section>
+            <section class="section" data-aos="fade-up" data-aos-delay="300">
+                <div class="section-header">
+                    <i class="fas fa-laptop-code section-icon"></i>
+                    <h2>Technical Skills</h2>
+                </div>
+                <div>
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skills-container">
+                        <div class="skill-tag">Java</div>
+                        <div class="skill-tag">C#</div>
+                        <div class="skill-tag">JavaScript</div>
+                    </div>
+
+                    <h3><i class="fas fa-layer-group"></i> Frameworks/Platforms</h3>
+                    <div class="skills-container">
+                        <div class="skill-tag">Spring MVC</div>
+                        <div class="skill-tag">Spring Boot</div>
+                        <div class="skill-tag">Spring Security</div>
+                        <div class="skill-tag">Flask</div>
+                        <div class="skill-tag">Hibernate</div>
+                        <div class="skill-tag">JPA</div>
+                    </div>
+
+                    <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                    <div class="skills-container">
+                        <div class="skill-tag">HTML</div>
+                        <div class="skill-tag">CSS</div>
+                        <div class="skill-tag">Bootstrap</div>
+                    </div>
+
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="skills-container">
+                        <div class="skill-tag">MS SQL Server</div>
+                        <div class="skill-tag">MySQL</div>
+                    </div>
+
+                    <h3><i class="fas fa-tools"></i> Development Tools</h3>
+                    <div class="skills-container">
+                        <div class="skill-tag">VS Code</div>
+                        <div class="skill-tag">NetBeans</div>
+                        <div class="skill-tag">Eclipse</div>
+                        <div class="skill-tag">IntelliJ IDEA</div>
+                        <div class="skill-tag">Laragon</div>
+                        <div class="skill-tag">Postman</div>
+                    </div>
+
+                    <h3><i class="fas fa-code-branch"></i> Version Control</h3>
+                    <div class="skills-container">
+                        <div class="skill-tag">GitHub</div>
+                        <div class="skill-tag">GitLab</div>
+                    </div>
+
+                    <h3><i class="fas fa-tasks"></i> Management Tools</h3>
+                    <div class="skills-container">
+                        <div class="skill-tag">Trello</div>
+                        <div class="skill-tag">Jira</div>
+                    </div>
+
+                    <h3><i class="fas fa-language"></i> Foreign Languages</h3>
+                    <div class="skills-container">
+                        <div class="skill-tag">English (B1)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" data-aos="fade-up" data-aos-delay="400">
+                <div class="section-header">
+                    <i class="fas fa-project-diagram section-icon"></i>
+                    <h2>Project Experience</h2>
+                </div>
+
+                <div class="project" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-title">AI Video Presentation Web Application</div>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar-alt"></i> March 2024 - June 2024</span>
+                            <span><i class="fas fa-users"></i> 3 Members</span>
+                            <span><i class="fas fa-user-tie"></i> Role: Team Leader, System Analyst, Full Stack Developer</span>
+                        </div>
+                    </div>
+                    <p><strong>Description:</strong> Led the development of a web application that generates AI-driven video presentations from text inputs.</p>
+                    <p><strong>Technologies:</strong></p>
+                    <div class="skills-container">
+                        <div class="skill-tag">Python</div>
+                        <div class="skill-tag">Flask</div>
+                        <div class="skill-tag">GPT-3.5</div>
+                        <div class="skill-tag">DALL-E 2</div>
+                    </div>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Led the development of a web application using Python and Flask.</li>
+                        <li>Integrated machine learning models to automate video creation based on text inputs.</li>
+                        <li>Created project timelines and managed the team's progress.</li>
+                        <li>Analyzed system requirements and created use case diagrams.</li>
+                    </ul>
+                </div>
+
+                <div class="project" data-aos="fade-up">
+                    <div class="project-header">
+                        <div class="project-title">Convenience Store Website</div>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar-alt"></i> May 2024 - July 2024</span>
+                            <span><i class="fas fa-users"></i> 4 Members</span>
+                            <span><i class="fas fa-user-tie"></i> Role: Team Leader, Backend Developer, Frontend Developer</span>
+                        </div>
+                    </div>
+                    <p><strong>Description:</strong> Created a website for a convenience store to manage products, inventory, and customer orders.</p>
+                    <p><strong>Technologies:</strong></p>
+                    <div class="skills-container">
+                        <div class="skill-tag">Spring Boot</div>
+                        <div class="skill-tag">HTML</div>
+                        <div class="skill-tag">CSS</div>
+                        <div class="skill-tag">Bootstrap</div>
+                        <div class="skill-tag">MySQL</div>
+                    </div>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Developed RESTful APIs for product management, inventory tracking, and customer orders.</li>
+                        <li>Implemented frontend features using HTML, CSS, and Bootstrap.</li>
+                        <li>Designed and implemented the database using MySQL.</li>
+                        <li>Managed team progress and timelines.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Lê Duy Luân - Software Engineering Portfolio</p>
+        </footer>
     </div>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+        });
+    </script>
 </body>
 
 </html>
